@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CustomAdapter</string>
+    <string name="main_btn_add">ADD</string>
+    <string name="add_et_username">Username</string>
+    <string name="add_et_description">Description</string>
+    <string name="add_et_date">Date</string>
+    <string name="add_et_followers">Followers</string>
+    <string name="add_et_posts">Posts</string>
+    <string name="add_et_following">Following</string>
+
+</resources>

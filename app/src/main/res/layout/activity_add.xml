@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <EditText
+        android:id="@+id/add_et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="@string/add_et_username"
+        android:padding="18dp"
+        />
+    <EditText
+        android:id="@+id/add_et_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="@string/add_et_description"
+        android:padding="18dp"
+        />
+    <EditText
+        android:id="@+id/add_et_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:text="@string/add_et_date"
+        android:padding="18dp"
+        />
+    <EditText
+        android:id="@+id/add_et_followers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="@string/add_et_followers"
+        android:padding="18dp"
+        />
+    <EditText
+        android:id="@+id/add_et_posts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="@string/add_et_posts"
+        android:padding="18dp"
+        />
+    <EditText
+        android:id="@+id/add_et_following"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="@string/add_et_following"
+        android:padding="18dp"
+        />
+
+    <Button
+        android:id="@+id/add_btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_btn_add" />
+</LinearLayout>

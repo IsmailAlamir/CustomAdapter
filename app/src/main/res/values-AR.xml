@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CustomAdapter</string>
+    <string name="main_btn_add">اضافة</string>
+    <string name="add_et_username">اسم المستخدم</string>
+    <string name="add_et_description">الوصف</string>
+    <string name="add_et_date">التاريخ</string>
+    <string name="add_et_followers">المتابعين</string>
+    <string name="add_et_posts">المنشورات</string>
+    <string name="add_et_following">المتابعون</string>
+
+</resources>
