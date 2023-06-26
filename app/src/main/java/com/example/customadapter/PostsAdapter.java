@@ -8,22 +8,23 @@ import android.widget.BaseAdapter;
 import java.util.ArrayList;
 
 public class PostsAdapter extends BaseAdapter {
-    Context context;
-    ArrayList<String> data;
-
-    public PostsAdapter(Context context, ArrayList<String> data) {
+    private Context context;
+    private ArrayList<String> posts;
+    private int resource ;
+    public PostsAdapter(Context context,int resource , ArrayList<String> posts) {
         this.context = context;
-        this.data = data;
+        this.posts = posts;
+        this.resource=resource;
     }
 
     @Override
     public int getCount() {
-        return 0;
+        return posts.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return null;
+        return posts.get(position);
     }
 
     @Override
