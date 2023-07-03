@@ -1,6 +1,8 @@
 package com.example.customadapter;
 
-public class Post {
+import java.io.Serializable;
+
+public class Post implements Serializable {
     private String date;
     private String name;
     private String body;
