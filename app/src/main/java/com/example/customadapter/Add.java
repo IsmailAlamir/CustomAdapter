@@ -18,6 +18,8 @@ public class Add extends AppCompatActivity {
     EditText et_posts;
     EditText et_following;
     Button btn_add;
+    static final String post_variable_name="post";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,18 +40,14 @@ public class Add extends AppCompatActivity {
                 String username= et_username.getText().toString();
                 String description= et_description.getText().toString();
                 String date= et_date.getText().toString();
-                String followers= et_followers.getText().toString();
-                String posts= et_posts.getText().toString();
-                String following= et_following.getText().toString();
+                int followers= Integer.parseInt(et_followers.getText().toString());
+                int posts=Integer.parseInt(et_posts.getText().toString());
+                int following=Integer.parseInt(et_following.getText().toString());
+
+                Post post=new Post(date,username, description,followers,following,posts);
 
                 Intent intent = new Intent();
-                intent.putExtra("username", username);
-                intent.putExtra("description", description);
-                intent.putExtra("date", date);
-                intent.putExtra("followers", followers);
-                intent.putExtra("posts", posts);
-                intent.putExtra("following", following);
-
+                intent.putExtra(post_variable_name, post);
                 setResult(1, intent);
                 finish();
 
