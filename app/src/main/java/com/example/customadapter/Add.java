@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.google.android.material.snackbar.Snackbar;
+
 import java.util.Date;
 
 public class Add extends AppCompatActivity {
@@ -33,7 +35,7 @@ public class Add extends AppCompatActivity {
         et_following = findViewById(R.id.add_et_following);
         btn_add = findViewById(R.id.add_btn_add);
 
-
+        Snackbar.make(this,btn_add,"snack bar", Snackbar.LENGTH_LONG).show();
         btn_add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
