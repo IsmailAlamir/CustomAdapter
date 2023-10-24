@@ -48,7 +48,7 @@ public class Add extends AppCompatActivity {
 
                 Intent intent = new Intent();
                 intent.putExtra(post_variable_name, post);
-                setResult(1, intent);
+                setResult(RESULT_OK, intent);
                 finish();
 
             }

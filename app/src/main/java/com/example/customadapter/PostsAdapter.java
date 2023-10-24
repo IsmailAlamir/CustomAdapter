@@ -1,5 +1,6 @@
 package com.example.customadapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -39,12 +40,13 @@ public class PostsAdapter extends BaseAdapter {
         return 0;
     }
 
+    @SuppressLint("SetTextI18n")
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View view= convertView;
         if (view==null){
-            view= LayoutInflater.from(context).inflate(resource,null,false);
-        }
+         }
+        assert view != null;
         TextView tv_date= view.findViewById(R.id.date);
         TextView tv_name=view.findViewById(R.id.tv_name);
         TextView tv_description=view.findViewById(R.id.description);
